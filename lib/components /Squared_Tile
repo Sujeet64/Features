@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+class SquaredTile extends StatelessWidget {
+  final String imagePath;
+  const SquaredTile({
+    Key?key,
+    required this.imagePath,
+      }) : super(key:key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Image.asset(imagePath, width: 40, height: 40),
+      
+      decoration: BoxDecoration(
+        border: Border.all(
+          width: 1,
+          color: Colors.white,
+        ),
+        borderRadius: BorderRadius.circular(16),
+        color: Colors.grey[200],
+      ),
+    );
+  }
+}
