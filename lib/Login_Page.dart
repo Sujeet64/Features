@@ -6,9 +6,9 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 //project level libraries
 import 'WeatherApi.dart';
-import 'components /My_TextField'; 
-import 'components /My_BaseButton';
-import 'components /Squared_Tile';
+import 'components/My_TextField'; 
+import 'components/My_BaseButton';
+import 'components/Squared_Tile';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
