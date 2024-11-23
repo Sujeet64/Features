@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "804719664181",
+    "firebase_url": "https://ngl2024-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ngl2024",
+    "storage_bucket": "ngl2024.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804719664181:android:b3b6178b6410a17063657c",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804719664181-umg79ee8lfaacl6mjmafvag478c3mn42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Iqr3uSuQnP1UVQHdxgp377DQvCAfsfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804719664181-umg79ee8lfaacl6mjmafvag478c3mn42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

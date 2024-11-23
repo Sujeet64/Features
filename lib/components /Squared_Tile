@@ -1,23 +1,34 @@
 import 'package:flutter/material.dart';
 class SquaredTile extends StatelessWidget {
   final String imagePath;
-  const SquaredTile({
-    Key?key,
+  final VoidCallback onTap;
+
+  SquaredTile({
     required this.imagePath,
-      }) : super(key:key);
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Image.asset(imagePath, width: 40, height: 40),
-      
-      decoration: BoxDecoration(
-        border: Border.all(
-          width: 1,
-          color: Colors.white,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(7),
+        child: Image.asset(imagePath, width: 45, height: 45,
+        errorBuilder: (context, error, stackTrace) => Icon(
+            Icons.broken_image,
+            size: 45,
+            color: Colors.grey,
+          ), // Fallback in case image is not found
+          ),
+        decoration: BoxDecoration(
+          border: Border.all(
+            width: 1,
+            color: Colors.white,
+          ),
+          borderRadius: BorderRadius.circular(16),
+          color: Colors.grey[100],
         ),
-        borderRadius: BorderRadius.circular(16),
-        color: Colors.grey[200],
       ),
     );
   }
